@@ -1,7 +1,5 @@
 # API em C# - Curso Alura
 
-Foi desenvolvido um projeto utilizando API em C#
-
 ## Tópicos Abordados
 
 ### **Parte 1: Introdução à API em C#**
