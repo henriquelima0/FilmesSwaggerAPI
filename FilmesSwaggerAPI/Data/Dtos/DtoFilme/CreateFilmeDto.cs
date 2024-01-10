@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FilmesSwaggerAPI.Data.Dtos;
+namespace FilmesSwaggerAPI.Data.Dtos.DtoFilme;
 
 public class CreateFilmeDto
 {

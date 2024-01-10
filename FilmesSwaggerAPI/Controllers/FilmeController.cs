@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using FilmesSwaggerAPI.Data;
-using FilmesSwaggerAPI.Data.Dtos;
+using FilmesSwaggerAPI.Data.Dtos.DtoFilme;
 using FilmesSwaggerAPI.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -44,9 +44,16 @@ namespace FilmesSwaggerAPI.Controllers
         /// <param name="take">Número de registros para retornar.</param>
         /// <returns>Lista de filmes.</returns>
         [HttpGet]
-        public IEnumerable<ReadFilmeDto> LerFilmes([FromQuery] int skip = 0, [FromQuery] int take = 10)
+        public IEnumerable<ReadFilmeDto> LerFilmes([FromQuery] int skip = 0, [FromQuery] int take = 10,
+            [FromQuery] string? nomeCinema = null) // busca por filme via LINQ
         {
-            return _mapper.Map<List<ReadFilmeDto>>(_context.Filmes.Skip(skip).Take(take));
+            if (nomeCinema == null)
+            {
+                return _mapper.Map<List<ReadFilmeDto>>(_context.Filmes.Skip(skip).Take(take).ToList());
+            }
+            return _mapper.Map<List<ReadFilmeDto>>(_context.Filmes.Skip(skip).Take(take) // Exibe filmes pelo CINEMA utilizando LINQ 
+                .Where(filme => filme.Sessoes
+                .Any(sessao => sessao.Cinema.Nome == nomeCinema)).ToList());
         }
 
         /// <summary>

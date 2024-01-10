@@ -47,3 +47,5 @@ D:\projetosVisualStudio\FilmesSwaggerAPI\FilmesSwaggerAPI\bin\Debug\net6.0\Newto
 D:\projetosVisualStudio\FilmesSwaggerAPI\FilmesSwaggerAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 D:\projetosVisualStudio\FilmesSwaggerAPI\FilmesSwaggerAPI\bin\Debug\net6.0\FilmesSwaggerAPI.xml
 D:\projetosVisualStudio\FilmesSwaggerAPI\FilmesSwaggerAPI\obj\Debug\net6.0\FilmesSwaggerAPI.xml
+D:\projetosVisualStudio\FilmesSwaggerAPI\FilmesSwaggerAPI\bin\Debug\net6.0\Castle.Core.dll
+D:\projetosVisualStudio\FilmesSwaggerAPI\FilmesSwaggerAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll

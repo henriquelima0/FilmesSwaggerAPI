@@ -4,7 +4,7 @@
         <name>FilmesSwaggerAPI</name>
     </assembly>
     <members>
-        <member name="M:FilmesSwaggerAPI.Controllers.FilmeController.AdicionaFilme(FilmesSwaggerAPI.Data.Dtos.CreateFilmeDto)">
+        <member name="M:FilmesSwaggerAPI.Controllers.FilmeController.AdicionaFilme(FilmesSwaggerAPI.Data.Dtos.DtoFilme.CreateFilmeDto)">
             <summary>
             Adiciona um filme ao banco de dados.
             </summary>
@@ -12,7 +12,7 @@
             <returns>IActionResult</returns>
             <response code="201">Caso inserção seja feita com sucesso.</response>
         </member>
-        <member name="M:FilmesSwaggerAPI.Controllers.FilmeController.LerFilmes(System.Int32,System.Int32)">
+        <member name="M:FilmesSwaggerAPI.Controllers.FilmeController.LerFilmes(System.Int32,System.Int32,System.String)">
             <summary>
             Obtém uma lista de filmes paginada.
             </summary>
@@ -27,7 +27,7 @@
             <param name="id">ID do filme.</param>
             <returns>Filme correspondente ao ID.</returns>
         </member>
-        <member name="M:FilmesSwaggerAPI.Controllers.FilmeController.AtualizaFilme(System.Int32,FilmesSwaggerAPI.Data.Dtos.UpdateFilmeDto)">
+        <member name="M:FilmesSwaggerAPI.Controllers.FilmeController.AtualizaFilme(System.Int32,FilmesSwaggerAPI.Data.Dtos.DtoFilme.UpdateFilmeDto)">
             <summary>
             Atualiza um filme por ID.
             </summary>
@@ -35,7 +35,7 @@
             <param name="filmeDto">Objeto com os campos a serem atualizados.</param>
             <returns>IActionResult</returns>
         </member>
-        <member name="M:FilmesSwaggerAPI.Controllers.FilmeController.AtualizaFilmeParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{FilmesSwaggerAPI.Data.Dtos.UpdateFilmeDto})">
+        <member name="M:FilmesSwaggerAPI.Controllers.FilmeController.AtualizaFilmeParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{FilmesSwaggerAPI.Data.Dtos.DtoFilme.UpdateFilmeDto})">
             <summary>
             Atualiza parcialmente um filme por ID.
             </summary>
