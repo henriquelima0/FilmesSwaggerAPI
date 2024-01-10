@@ -1,4 +1,4 @@
-# API em C# - Curso Alura
+# ASP.Net Core: C#, .NET, Entity Framework e LINQ
 
 ## Tópicos Abordados
 
